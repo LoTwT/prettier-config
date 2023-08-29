@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@sxzz/prettier-config':
+    specifier: ^1.0.4
+    version: 1.0.4
+
 devDependencies:
   '@ayingott/eslint-config':
     specifier: ^0.4.0
@@ -643,6 +648,10 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@sxzz/prettier-config@1.0.4:
+    resolution: {integrity: sha512-KqgPNwMYloKI+LGAW8LwS0hEJHgwnrIJjgQC0B/saoDJZKUIrqc+lLme/lobrzBetPNhrCuhSDELRrZTg32l0w==}
+    dev: false
 
   /@tootallnate/once@2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
