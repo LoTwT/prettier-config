@@ -45,5 +45,6 @@
       "eslint --fix",
       "prettier --write --ignore-unknown"
     ]
-  }
+  },
+  "prettier": "@ayingott/prettier-config"
 }
