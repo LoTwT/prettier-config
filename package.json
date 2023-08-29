@@ -1,8 +1,9 @@
 {
-  "name": "@ayingott/prettier-config",
+  "name": "prettier-config-monorepo",
   "version": "0.0.0",
   "description": "prettier-config",
   "type": "module",
+  "private": true,
   "packageManager": "pnpm@8.7.0",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -14,29 +15,6 @@
   "bugs": {
     "url": "https://github.com/LoTwT/prettier-config/issues"
   },
-  "keywords": [],
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
-    }
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "watch": "tsup --watch",
     "build": "tsup",
@@ -48,9 +26,6 @@
     "prepare": "simple-git-hooks",
     "up": "taze latest -I"
   },
-  "dependencies": {
-    "@sxzz/prettier-config": "^1.0.4"
-  },
   "devDependencies": {
     "@ayingott/eslint-config": "^0.4.0",
     "@types/node": "^20.5.7",
@@ -61,7 +36,6 @@
     "prettier": "^3.0.2",
     "simple-git-hooks": "^2.9.0",
     "taze": "^0.11.2",
-    "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   },
   "simple-git-hooks": {
@@ -69,8 +43,8 @@
   },
   "lint-staged": {
     "*": [
-      "prettier --write --ignore-unknown",
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
     ]
   }
 }
