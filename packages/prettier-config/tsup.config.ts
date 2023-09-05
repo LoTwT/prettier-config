@@ -9,4 +9,5 @@ export default defineConfig({
   cjsInterop: true,
   // https://github.com/egoist/tsup/commit/9b813620a884f5b780346a240c51ead321227bce
   splitting: true,
+  platform: "neutral",
 })

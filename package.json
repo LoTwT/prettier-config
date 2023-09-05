@@ -4,7 +4,7 @@
   "description": "prettier-config",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.7.0",
+  "packageManager": "pnpm@8.7.1",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/LoTwT/prettier-config#readme",
@@ -25,14 +25,14 @@
     "release": "pnpm build && bumpp -r && pnpm -r publish"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^0.4.0",
+    "@ayingott/eslint-config": "^0.5.2",
     "@ayingott/prettier-config": "workspace:*",
-    "@types/node": "^20.5.7",
+    "@types/node": "^20.5.9",
     "bumpp": "^9.2.0",
     "eslint": "^8.48.0",
     "lint-staged": "^14.0.1",
-    "pnpm": "^8.7.0",
-    "prettier": "^3.0.2",
+    "pnpm": "^8.7.1",
+    "prettier": "^3.0.3",
     "simple-git-hooks": "^2.9.0",
     "taze": "^0.11.2",
     "typescript": "^5.2.2"
