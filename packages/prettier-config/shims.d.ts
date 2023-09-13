@@ -1,5 +1,5 @@
 declare module "@sxzz/prettier-config" {
-  import { Config } from "prettier"
+  import { type Config } from "prettier"
 
   const config: Config
   export default config

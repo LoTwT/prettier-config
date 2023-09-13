@@ -1,4 +1,4 @@
-import { Config } from "prettier"
+import { type Config } from "prettier"
 import SxzzConfig from "@sxzz/prettier-config"
 
 const config: Config = {
@@ -10,6 +10,16 @@ const config: Config = {
   trailingComma: "all",
   semi: false,
   endOfLine: "lf",
+  overrides: [
+    ...(SxzzConfig?.overrides ?? []),
+    {
+      files: "*.json5",
+      options: {
+        trailingComma: "none",
+      },
+    },
+  ],
 }
 
+export { Config }
 export default config
