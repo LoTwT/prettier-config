@@ -45,7 +45,7 @@ export default prettierConfig
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   }
 }
 ```

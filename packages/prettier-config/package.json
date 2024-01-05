@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "prettier-config",
   "type": "module",
-  "packageManager": "pnpm@8.7.5",
+  "packageManager": "pnpm@8.14.0",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/LoTwT/prettier-config#readme",
@@ -41,12 +41,12 @@
     "build": "tsup"
   },
   "dependencies": {
-    "@sxzz/prettier-config": "^1.0.4"
+    "@sxzz/prettier-config": "^2.0.0"
   },
   "devDependencies": {
-    "pnpm": "^8.7.5",
-    "prettier": "^3.0.3",
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2"
+    "pnpm": "^8.14.0",
+    "prettier": "^3.1.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
   }
 }
