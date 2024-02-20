@@ -18,6 +18,12 @@ const config: Config = {
         trailingComma: "none",
       },
     },
+    {
+      files: ["**/typed-router.d.ts"],
+      options: {
+        requirePragma: true,
+      },
+    },
   ],
 }
 
