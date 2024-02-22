@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup"
 
 export default defineConfig({
-  entry: ["index.ts"],
+  entry: ["index.ts", "config.ts"],
   format: ["esm", "cjs"],
   clean: true,
   target: "esnext",
