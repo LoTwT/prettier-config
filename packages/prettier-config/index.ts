@@ -18,14 +18,8 @@ const config: Config = {
         trailingComma: "none",
       },
     },
-    {
-      files: ["**/typed-router.d.ts"],
-      options: {
-        requirePragma: true,
-      },
-    },
   ],
 }
 
-export { Config, config }
+export { Config }
 export default config
