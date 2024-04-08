@@ -27,5 +27,5 @@ const config: Config = {
   ],
 }
 
-export { Config }
+export { Config, config }
 export default config
