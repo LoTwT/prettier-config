@@ -1,6 +1,6 @@
 {
   "name": "@ayingott/prettier-config",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "prettier-config",
   "type": "module",
   "packageManager": "pnpm@9.0.6",
