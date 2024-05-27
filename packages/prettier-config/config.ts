@@ -1,7 +1,7 @@
-import config from "./index"
 import type { Config } from "prettier"
+import config from "./index"
 
-export const defineConfig = (c: Config): Config => {
+export function defineConfig(c: Config): Config {
   const { overrides, ...rest } = c
 
   return {

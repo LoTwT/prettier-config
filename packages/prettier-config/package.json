@@ -1,9 +1,9 @@
 {
   "name": "@ayingott/prettier-config",
-  "version": "0.3.3",
-  "description": "prettier-config",
   "type": "module",
-  "packageManager": "pnpm@9.1.1",
+  "version": "0.3.3",
+  "packageManager": "pnpm@9.1.3",
+  "description": "prettier-config",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/LoTwT/prettier-config#readme",
@@ -18,12 +18,12 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
     "./config": {
-      "require": "./dist/config.cjs",
-      "import": "./dist/config.js"
+      "import": "./dist/config.js",
+      "require": "./dist/config.cjs"
     }
   },
   "main": "./dist/index.cjs",
