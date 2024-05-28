@@ -1,8 +1,6 @@
-import SxzzConfig from "@sxzz/prettier-config"
 import type { Config } from "prettier"
 
 const config: Config = {
-  ...SxzzConfig,
   useTabs: false,
   tabWidth: 2,
   printWidth: 80,
@@ -11,7 +9,40 @@ const config: Config = {
   semi: false,
   endOfLine: "lf",
   overrides: [
-    ...(SxzzConfig?.overrides ?? []),
+    {
+      files: [
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/output/**",
+        "**/coverage/**",
+        "**/temp/**",
+        "**/.vitepress/cache/**",
+        "**/.nuxt/**",
+        "**/.vercel/**",
+        "**/.changeset/**",
+        "**/.idea/**",
+        "**/.output/**",
+        "**/.vite-inspect/**",
+
+        "**/CHANGELOG*.md",
+        "**/*.min.*",
+        "**/LICENSE*",
+        "**/__snapshots__",
+        "**/auto-import?(s).d.ts",
+        "**/components.d.ts",
+        "**/typed-router.d.ts",
+        "**/pnpm-lock.yaml",
+      ],
+      options: {
+        requirePragma: true,
+      },
+    },
+    {
+      files: ["**/jsr.json"],
+      options: {
+        parser: "json-stringify",
+      },
+    },
     {
       files: "*.json5",
       options: {

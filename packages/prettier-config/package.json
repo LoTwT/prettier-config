@@ -43,9 +43,6 @@
   "scripts": {
     "build": "tsup"
   },
-  "dependencies": {
-    "@sxzz/prettier-config": "^2.0.2"
-  },
   "devDependencies": {
     "prettier": "^3.2.5",
     "tsup": "^8.0.2",
