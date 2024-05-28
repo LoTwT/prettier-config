@@ -8,6 +8,7 @@ const config: Config = {
   trailingComma: "all",
   semi: false,
   endOfLine: "lf",
+  proseWrap: "always",
   overrides: [
     {
       files: [
