@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@ayingott/eslint-config':
-        specifier: ^1.0.0
-        version: 1.0.0(@types/eslint@8.56.10)(@vue/compiler-sfc@3.4.27)(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5)
+        specifier: ^1.1.0
+        version: 1.1.0(@types/eslint@8.56.10)(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.1(eslint@9.3.0))(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5)
       '@ayingott/prettier-config':
         specifier: workspace:*
         version: link:packages/prettier-config
@@ -23,6 +23,9 @@ importers:
       eslint:
         specifier: ^9.3.0
         version: 9.3.0
+      eslint-plugin-format:
+        specifier: ^0.1.1
+        version: 0.1.1(eslint@9.3.0)
       lint-staged:
         specifier: ^15.2.5
         version: 15.2.5
@@ -46,7 +49,7 @@ importers:
         version: 3.2.5
       tsup:
         specifier: ^8.0.2
-        version: 8.0.2(typescript@5.4.5)
+        version: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -109,17 +112,20 @@ packages:
   '@antfu/utils@0.7.8':
     resolution: {integrity: sha512-rWQkqXRESdjXtc+7NRfK9lASQjpXJu1ayp7qi1d23zZorY+wBHVLHHoVcMsEnkqEBWTFqbztO7/QdJFzyEcLTg==}
 
-  '@ayingott/eslint-config-prettier@1.0.0':
-    resolution: {integrity: sha512-EcOTNTDVabxiaQsGsnaphdE1dVSD3k4fxBzyZmvR5Sfq/l0krcUcVo6cVmuA4W5Hgy/wxPpAx8qqU/BTPyBwxw==}
+  '@ayingott/eslint-config-prettier@1.1.0':
+    resolution: {integrity: sha512-lk5c1lDJbvBD6kIeK0Py8KSkJaScfBF1DZgG9PSiVf7Ionjkibx9e68/r9PbkKmZ0SXelqVzLw5sdhaGtr6Z/A==}
     peerDependencies:
       eslint: '>=9.0.0'
       prettier: '>=3.0.0'
 
-  '@ayingott/eslint-config@1.0.0':
-    resolution: {integrity: sha512-U/AMS3mTPOv0uFhsZZKDIFFFEOcCEJSnBsMAoZmTfU8j5FhSD5sBX/fPp2GBYxDzgDnoKKwj7f/CvSxtcZ6ZeQ==}
+  '@ayingott/eslint-config@1.1.0':
+    resolution: {integrity: sha512-CpTlN/4BR4XvxjcZQu6ncAhNEUMCVdGvPZ5lW3/F3WVPFZxOamemI9HeADdwaAokDbIEhz+n6fcGY/VcWmh1tw==}
     peerDependencies:
       eslint: '>=9.0.0'
       prettier: '>=3.0.0'
+
+  '@ayingott/prettier-config@0.3.3':
+    resolution: {integrity: sha512-9zoeOqNkOV6PnKf2P+/GIf79snSxPKDSDPfdL+o7yLUyeOvlxyKkj9plACdJFMO5xLyv9d4hGR1NlpkO8t07ZQ==}
 
   '@babel/code-frame@7.24.6':
     resolution: {integrity: sha512-ZJhac6FkEd1yhG2AHOmfcXG4ceoLltoCVJjN5XsWN9BifBQr+cHJbWi0h68HZuSORq+3WtJ2z0hwF2NG1b5kcA==}
@@ -493,6 +499,9 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
+  '@sxzz/prettier-config@2.0.2':
+    resolution: {integrity: sha512-yBKxaIr6WqgHTaLgX0g6gxNuMllkwR1QGeXynfJGmyD+XrZqO96t9xT5Mfbr9H3+N56SXY9/yFvP/e8lcJI7KA==}
+
   '@types/eslint@8.56.10':
     resolution: {integrity: sha512-Shavhk87gCtY2fhXDctcfS3e6FdxWkCx1iUZ9eEUbh7rTqlZT0/IzOkCOVt0fCjcFuZ9FPYfuezTBImfHCDBGQ==}
 
@@ -696,8 +705,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001623:
-    resolution: {integrity: sha512-X/XhAVKlpIxWPpgRTnlgZssJrF0m6YtRA0QDWgsBNT12uZM6LPRydR7ip405Y3t1LamD8cP2TZFEDZFBf5ApcA==}
+  caniuse-lite@1.0.30001624:
+    resolution: {integrity: sha512-0dWnQG87UevOCPYaOR49CBcLBwoZLpws+k6W37nLjWUhumP1Isusj0p2u+3KhjNloRWK9OKMgjBBzPujQHw4nA==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -2222,7 +2231,7 @@ snapshots:
 
   '@antfu/utils@0.7.8': {}
 
-  '@ayingott/eslint-config-prettier@1.0.0(@types/eslint@8.56.10)(eslint@9.3.0)(prettier@3.2.5)':
+  '@ayingott/eslint-config-prettier@1.1.0(@types/eslint@8.56.10)(eslint@9.3.0)(prettier@3.2.5)':
     dependencies:
       eslint: 9.3.0
       eslint-config-prettier: 9.1.0(eslint@9.3.0)
@@ -2231,12 +2240,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/eslint'
 
-  '@ayingott/eslint-config@1.0.0(@types/eslint@8.56.10)(@vue/compiler-sfc@3.4.27)(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5)':
+  '@ayingott/eslint-config@1.1.0(@types/eslint@8.56.10)(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.1(eslint@9.3.0))(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5)':
     dependencies:
       '@antfu/eslint-config': 2.19.0(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.1(eslint@9.3.0))(eslint@9.3.0)(typescript@5.4.5)
-      '@ayingott/eslint-config-prettier': 1.0.0(@types/eslint@8.56.10)(eslint@9.3.0)(prettier@3.2.5)
+      '@ayingott/eslint-config-prettier': 1.1.0(@types/eslint@8.56.10)(eslint@9.3.0)(prettier@3.2.5)
+      '@ayingott/prettier-config': 0.3.3
       eslint: 9.3.0
-      eslint-plugin-format: 0.1.1(eslint@9.3.0)
       prettier: 3.2.5
     transitivePeerDependencies:
       - '@eslint-react/eslint-plugin'
@@ -2246,6 +2255,7 @@ snapshots:
       - '@vue/compiler-sfc'
       - astro-eslint-parser
       - eslint-plugin-astro
+      - eslint-plugin-format
       - eslint-plugin-react-hooks
       - eslint-plugin-react-refresh
       - eslint-plugin-solid
@@ -2257,6 +2267,10 @@ snapshots:
       - svelte-eslint-parser
       - typescript
       - vitest
+
+  '@ayingott/prettier-config@0.3.3':
+    dependencies:
+      '@sxzz/prettier-config': 2.0.2
 
   '@babel/code-frame@7.24.6':
     dependencies:
@@ -2561,6 +2575,8 @@ snapshots:
       - supports-color
       - typescript
 
+  '@sxzz/prettier-config@2.0.2': {}
+
   '@types/eslint@8.56.10':
     dependencies:
       '@types/estree': 1.0.5
@@ -2758,7 +2774,7 @@ snapshots:
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001623
+      caniuse-lite: 1.0.30001624
       electron-to-chromium: 1.4.783
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
@@ -2802,7 +2818,7 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  caniuse-lite@1.0.30001623: {}
+  caniuse-lite@1.0.30001624: {}
 
   chalk@2.4.2:
     dependencies:
@@ -3873,10 +3889,12 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-load-config@4.0.2:
+  postcss-load-config@4.0.2(postcss@8.4.38):
     dependencies:
       lilconfig: 3.1.1
       yaml: 2.4.2
+    optionalDependencies:
+      postcss: 8.4.38
 
   postcss-selector-parser@6.1.0:
     dependencies:
@@ -4183,7 +4201,7 @@ snapshots:
 
   tslib@2.6.2: {}
 
-  tsup@8.0.2(typescript@5.4.5):
+  tsup@8.0.2(postcss@8.4.38)(typescript@5.4.5):
     dependencies:
       bundle-require: 4.1.0(esbuild@0.19.12)
       cac: 6.7.14
@@ -4193,13 +4211,14 @@ snapshots:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 4.0.2
+      postcss-load-config: 4.0.2(postcss@8.4.38)
       resolve-from: 5.0.0
       rollup: 4.18.0
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tree-kill: 1.2.2
     optionalDependencies:
+      postcss: 8.4.38
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
