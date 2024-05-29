@@ -10,6 +10,7 @@ const config: Config = {
   endOfLine: "lf",
   proseWrap: "preserve",
   bracketSpacing: true,
+  quoteProps: "consistent",
   overrides: [
     {
       files: [
@@ -49,6 +50,12 @@ const config: Config = {
       files: "*.json5",
       options: {
         trailingComma: "none",
+      },
+    },
+    {
+      files: "*.md",
+      options: {
+        parser: "markdown",
       },
     },
   ],
