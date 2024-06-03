@@ -1,34 +1,22 @@
-# prettier-config
+# @ayingott/prettier-config
 
 [![@ayingott/prettier-config](https://img.shields.io/npm/v/@ayingott/prettier-config.svg)](https://npmjs.com/package/@ayingott/prettier-config)
 
-## features
-
-- useTabs: false,
-- tabWidth: 2,
-- printWidth: 80,
-- singleQuote: false,
-- trailingComma: "all",
-- semi: false,
-- endOfLine: "lf",
-
-### json5
-
-- trailingComma: "none"
+My personal taste of the prettier config.
 
 ## Usage
 
 ```bash
-pnpm add -D @ayingott/prettier-config
+ni -D @ayingott/prettier-config
 ```
 
 ### With all out-of-box features
 
 ```js
 // prettier.config.js
-import prettierConfig from "@ayingott/prettierConfig-config"
+import config from "@ayingott/prettier-config"
 
-export default prettierConfig
+export default config
 ```
 
 ```json
@@ -36,6 +24,18 @@ export default prettierConfig
 {
   "prettier": "@ayingott/prettier-config"
 }
+```
+
+### Customize config
+
+```js
+// prettier.config.js
+// @ts-check
+import { defineConfig } from "@ayingott/prettier-config/config"
+
+export default defineConfig({
+  // custom configs
+})
 ```
 
 ## VSCode
