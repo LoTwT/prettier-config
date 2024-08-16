@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.2.5",
   "private": true,
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@9.7.1",
   "description": "prettier-config",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -25,15 +25,15 @@
     "up": "taze latest -I -r"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^1.4.4",
+    "@ayingott/eslint-config": "^1.4.5",
     "@ayingott/prettier-config": "workspace:*",
-    "@types/node": "^22.0.2",
-    "bumpp": "^9.4.2",
-    "eslint": "^9.8.0",
-    "lint-staged": "^15.2.7",
+    "@types/node": "^22.3.0",
+    "bumpp": "^9.5.1",
+    "eslint": "^9.9.0",
+    "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "simple-git-hooks": "^2.11.1",
-    "taze": "^0.16.3",
+    "taze": "^0.16.6",
     "typescript": "^5.5.4"
   },
   "simple-git-hooks": {
