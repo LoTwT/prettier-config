@@ -2,7 +2,7 @@
   "name": "@ayingott/prettier-config",
   "type": "module",
   "version": "1.2.9",
-  "packageManager": "pnpm@9.15.2",
+  "packageManager": "pnpm@10.4.0",
   "description": "prettier-config",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -17,16 +17,10 @@
   "keywords": [],
   "sideEffects": false,
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./config": {
-      "import": "./dist/config.js",
-      "require": "./dist/config.cjs"
-    }
+    ".": "./dist/index.js",
+    "./config": "./dist/config.js"
   },
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typesVersions": {
@@ -41,11 +35,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup"
+    "build": "tsdown"
   },
   "devDependencies": {
-    "prettier": "^3.4.2",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
+    "prettier": "^3.5.1",
+    "tsdown": "^0.5.9",
+    "typescript": "^5.7.3"
   }
 }
