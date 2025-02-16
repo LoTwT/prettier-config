@@ -37,11 +37,11 @@
     "typescript": "^5.7.3"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "simple-git-hooks"
-    ],
     "ignoredBuiltDependencies": [
       "esbuild"
+    ],
+    "onlyBuiltDependencies": [
+      "simple-git-hooks"
     ]
   },
   "simple-git-hooks": {
