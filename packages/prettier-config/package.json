@@ -37,6 +37,10 @@
   "scripts": {
     "build": "tsdown"
   },
+  "dependencies": {
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
   "devDependencies": {
     "prettier": "^3.5.3",
     "tsdown": "^0.6.4",

@@ -5,6 +5,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "types": ["prettier-plugin-tailwindcss"],
     "strict": true,
     "strictNullChecks": true,
     "declaration": true,
