@@ -2,7 +2,7 @@
   "name": "@ayingott/prettier-config",
   "type": "module",
   "version": "2.1.0",
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.6.2",
   "description": "prettier-config",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "prettier": "^3.5.3",
-    "tsdown": "^0.6.4",
+    "tsdown": "^0.6.8",
     "typescript": "^5.8.2"
   }
 }
