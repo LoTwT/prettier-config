@@ -1,7 +1,4 @@
 import type { Config } from "prettier"
-// @ts-expect-error no dts
-import * as pluginAstro from "prettier-plugin-astro"
-import * as pluginTailwindCSS from "prettier-plugin-tailwindcss"
 
 const config: Config = {
   useTabs: false,
@@ -14,14 +11,7 @@ const config: Config = {
   proseWrap: "preserve",
   bracketSpacing: true,
   quoteProps: "consistent",
-  plugins: [
-    {
-      ...pluginTailwindCSS,
-    },
-    {
-      ...pluginAstro,
-    },
-  ],
+  plugins: ["prettier-plugin-tailwindcss", "prettier-plugin-astro"],
   overrides: [
     {
       files: [
