@@ -1,4 +1,12 @@
 import type { Config } from "prettier"
+import { createRequire } from "node:module"
+
+const require = createRequire(import.meta.url)
+const plugins = [
+  ...["astro", "tailwindcss"].map((p) =>
+    require.resolve(`prettier-plugin-${p}`),
+  ),
+]
 
 const config: Config = {
   useTabs: false,
@@ -11,7 +19,7 @@ const config: Config = {
   proseWrap: "preserve",
   bracketSpacing: true,
   quoteProps: "consistent",
-  plugins: ["prettier-plugin-tailwindcss", "prettier-plugin-astro"],
+  plugins,
   overrides: [
     {
       files: [
