@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.1.2",
   "private": true,
-  "packageManager": "pnpm@10.6.2",
+  "packageManager": "pnpm@10.10.0",
   "description": "prettier-config",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -25,24 +25,16 @@
     "up": "taze latest -I -r"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^2.0.1",
+    "@ayingott/eslint-config": "catalog:",
     "@ayingott/prettier-config": "workspace:*",
-    "@types/node": "^22.13.10",
-    "bumpp": "^10.1.0",
-    "eslint": "^9.22.0",
-    "lint-staged": "^15.5.0",
-    "prettier": "^3.5.3",
-    "simple-git-hooks": "^2.11.1",
-    "taze": "^19.0.2",
-    "typescript": "^5.8.2"
-  },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "esbuild"
-    ],
-    "onlyBuiltDependencies": [
-      "simple-git-hooks"
-    ]
+    "@types/node": "catalog:",
+    "bumpp": "catalog:",
+    "eslint": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "taze": "catalog:",
+    "typescript": "catalog:"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
