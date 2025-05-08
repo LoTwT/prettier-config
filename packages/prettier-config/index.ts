@@ -35,6 +35,7 @@ const config: Config = {
         "**/.idea/**",
         "**/.output/**",
         "**/.vite-inspect/**",
+        "**/src-tauri/**",
 
         "**/CHANGELOG*.md",
         "**/*.min.*",
