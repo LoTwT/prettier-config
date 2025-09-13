@@ -2,7 +2,7 @@
   "name": "@ayingott/prettier-config",
   "type": "module",
   "version": "2.1.6",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.16.0",
   "description": "prettier-config",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
