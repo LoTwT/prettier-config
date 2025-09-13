@@ -1,7 +1,7 @@
 {
   "name": "@ayingott/prettier-config",
   "type": "module",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "packageManager": "pnpm@10.16.0",
   "description": "prettier-config",
   "author": "LoTwT <l709937065@gmail.com>",
