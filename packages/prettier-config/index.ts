@@ -63,6 +63,12 @@ const config: Config = {
       },
     },
     {
+      files: "*.jsonc",
+      options: {
+        trailingComma: "none",
+      },
+    },
+    {
       files: "*.md",
       options: {
         parser: "markdown",
